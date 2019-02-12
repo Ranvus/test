@@ -1,0 +1,228 @@
+@import "node_modules/bourbon/core/bourbon"
+
+body
+	font-family: "RobotoRegular", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+	margin: 0
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+button:visited, 
+button:focus, 
+button:active, 
+button:hover,
+.btn:visited, 
+.btn:focus, 
+.btn:active, 
+.btn:hover,
+input:visited, 
+input:focus, 
+input:active, 
+input:hover
+	outline: 0 none !important
+
+a:visited, 
+a:focus, 
+a:active,
+a:hover,
+a
+	text-decoration: none
+
+h1, h2
+	margin: 0
+
+.slider-top
+	width: 100%
+	.owl-carousel-top
+		.owl-prev, .owl-next
+			position: absolute
+			font: 200px
+			top: 45%
+			background-color: #fff
+			color: #fff
+			opacity: 0
+			transition: .5s 
+		.owl-prev
+			left: -4.5%
+		.owl-next
+			left: 100%
+		.owl-item
+			.owl-title
+				font-family: "RobotoLight", sans-serif
+				font-size: 92px
+				background: rgba(85, 85, 85, 0.3)
+				color: #fff
+				padding: 42px
+				position: absolute
+			.slider-title-1
+				top: 592px
+				left: 20px
+			.slider-title-2
+				top: 91px
+				left: 92px
+			.slider-title-3
+				top: 97px
+				left: 170px
+			.slider-title-4
+				top: 90px
+				left: 280px
+			.slider-title-5
+				top: 592px
+				left: 20px
+		.owl-dots
+			position: absolute
+			top: 855px
+			left: 44%
+			.owl-dot
+				width: 20px
+				height: 20px
+				border-radius: 50%
+				border: 3px solid #ffff00
+				margin-left: 20px
+			.active
+				background-color: #ffff00
+	.owl-carousel-top:hover .owl-prev
+		opacity: 1
+		left: 2%
+	.owl-carousel-top:hover .owl-next
+		opacity: 1
+		left: 96%
+
+.pointer
+	background-color: #50c4d2
+	text-align: center
+	width: 100%
+	h1
+		padding-top: 130px
+		padding-bottom: 80px
+		font-size: 60px
+		font-family: "RobotoBlack", sans-serif
+		text-transform: uppercase
+		color: #fff
+		text-shadow: 0 6px 18px black
+	img
+		margin-bottom: 65px
+
+.container
+	background: url(../img/bg.png) no-repeat center
+	height: 2860px
+	.platform
+		text-align: center
+		height: 550px
+		h2
+			color: #fff
+			font-size: 48px
+			font-family: "RobotoMedium", sans-serif
+			text-align: center
+			padding-top: 50px
+		.platform_item
+			display: inline-block
+			float: left
+			text-align: center
+			margin-left: 140px
+			margin-top: 70px
+			p
+				font-size: 30px
+				color: #fff
+	.attention
+		text-align: center
+		height: 550px
+		h2
+			color: #fff
+			font-size: 48px
+			font-family: "RobotoMedium", sans-serif
+			text-align: center
+			padding-top: 50px
+		.attention_item
+			margin-left: 230px
+			margin-top: 55px
+			display: inline-block
+			float: left
+			text-align: center
+			p
+				font-size: 36px
+				font-family: "RobotoMedium", sans-serid
+				color: #fff
+		.attention_item:last-child
+			margin-top: 55px
+
+.companies
+	width: 1903px
+	.blue
+		background-color: #7389ae
+	.brown
+		background-color: #937b63
+	.company_item
+		padding: 30px 125px
+		height: 160px
+		.company_left
+			float: left
+			width: 350px
+			text-align: center
+			margin-top: 20px
+			.company_img
+				width: 100px
+			.company_link
+				font-size: 20px
+				color: #fff
+				width: 340px
+				margin: 0
+		.company_text
+			float: left
+			color: #fff
+			font-size: 21px
+		.company_more
+			text-decoration: underline
+			font-size: 22px
+			color: #d6dadb
+			float: right
+
+footer
+	background-color: #7389ae
+	height: 270px
+	ul
+		text-align: center
+		margin: 0
+		padding-top: 45px
+		li
+			display: inline-block
+			font-size: 24px
+			text-decoration: underline
+			margin-left: 35px
+			a
+				color: #fff
+	.bottom
+		padding-top: 75px
+		height: 73px
+		span
+			font-size: 26px
+			margin: 0
+			margin-left: 70px
+			color: #fff
+			padding-top: 20px
+			vertical-align: middle
+			position: absolute
+			bottom: 40px
+		button
+			padding: 20px
+			background-color: #cba82c
+			border: 0
+			font-size: 28px
+			color: #fff
+			float: right
+			border-radius: 4px
+			margin-right: 35px
+			cursor: pointer
